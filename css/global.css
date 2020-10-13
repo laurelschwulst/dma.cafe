@@ -12,6 +12,11 @@
       -webkit-font-smoothing: antialiased;
       text-align: center;
       margin: 0;
+      line-height: 1.4;
+    }
+
+    a {
+      color: #F0F0F0;
     }
 
     img { max-width: 100%; }
@@ -32,15 +37,36 @@
       cursor: ne-resize;
     }
 
-    area.progress {
-      cursor: progress;
+    section#about-www-dma-cafe {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: serif;
+    }
+
+    section#about-www-dma-cafe img {
+      margin: 13px 12px;
+    }
+
+    section#about-www-dma-cafe img.portrait {
+      max-width: 250px;
+    }
+
+    section#about-www-dma-cafe img.landscape {
+      max-width: 400px;
     }
 
     @media(max-width: 900px) {
-      nav {
+      /* nav {
         display: none;
-      }
+      } */
       .slide {
-        padding: 15px 9% 0;
+        padding: 12px 12px 3px;
+      }
+      .slide img {
+        display: block;
+      }
+      section#about-www-dma-cafe img {
+        margin: 6px;
       }
     }
