@@ -1,72 +1,77 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-    html,
-    body {
-      height: 100%;
-    }
+html,
+body {
+  height: 100%;
+}
 
-    body {
-      background: #0F0F0F;
-      color: #F0F0F0;
-      font-family: monospace;
-      -webkit-font-smoothing: antialiased;
-      text-align: center;
-      margin: 0;
-      line-height: 1.4;
-    }
+body {
+  background: #0f0f0f;
+  color: #f0f0f0;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
 
-    a {
-      color: #F0F0F0;
-    }
+a {
+  color: #f0f0f0;
+}
 
-    img { max-width: 100%; }
+img {
+  max-width: 100%;
+}
 
-    .slide {
-      padding: 30px 15% 0;
-    }
+.slide {
+  padding: 30px 15% 0;
+}
 
-    section.slide:last-of-type {
-      padding-bottom: 30px;
-    }
+section.slide:last-of-type {
+  padding-bottom: 30px;
+}
 
-    footer {
-      margin: 30px 15px 15px;
-    }
+footer {
+  margin: 30px 15px 15px;
+}
 
-    area.external {
-      cursor: ne-resize;
-    }
+area.external {
+  cursor: ne-resize;
+}
 
-    section#about-www-dma-cafe {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      font-family: serif;
-    }
+section#about-www-dma-cafe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: serif;
+}
 
-    section#about-www-dma-cafe img {
-      margin: 13px 12px;
-    }
+section#about-www-dma-cafe img {
+  margin: 13px 12px;
+  align-self: center;
+}
 
-    section#about-www-dma-cafe img.portrait {
-      max-width: 250px;
-    }
+section#about-www-dma-cafe img.portrait {
+  max-width: 250px;
+}
 
-    section#about-www-dma-cafe img.landscape {
-      max-width: 400px;
-    }
+section#about-www-dma-cafe img.landscape {
+  max-width: 400px;
+}
 
-    @media(max-width: 900px) {
-      /* nav {
+@media (max-width: 900px) {
+  /* nav {
         display: none;
       } */
-      .slide {
-        padding: 12px 12px 3px;
-      }
-      .slide img {
-        display: block;
-      }
-      section#about-www-dma-cafe img {
-        margin: 6px;
-      }
-    }
+  .slide {
+    padding: 12px 12px 3px;
+  }
+  .slide img {
+    display: block;
+  }
+  section#about-www-dma-cafe img {
+    margin: 6px;
+  }
+}
