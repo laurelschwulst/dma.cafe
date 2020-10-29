@@ -50,6 +50,7 @@ section#about-www-dma-cafe {
 
 section#about-www-dma-cafe img {
   margin: 13px 12px;
+  /* important fix */
   align-self: center;
 }
 
