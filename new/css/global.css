@@ -23,7 +23,7 @@ body.single {
 }
 body.single .slide {
   margin-bottom: 0;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 a {
   color: #f0f0f0;
@@ -34,6 +34,9 @@ img {
 .slide {
   max-width: 1020px;
   margin: 0 auto 1em;
+}
+.slide img {
+  background: #2a2a2e;
 }
 footer {
   margin: 30px 15px 15px;
@@ -66,8 +69,6 @@ nav#prev {
   top: 0;
   bottom: 0;
   margin: 1em;
-  font-size: "Lucida Grande";
-  font-size: 15px;
 }
 
 nav#next span,
@@ -76,10 +77,11 @@ nav#prev span {
   align-items: center;
   justify-content: center;
   height: 32px;
-  width: 32px;
-  padding-bottom: 2px;
+  padding: 0 8px 1px 8px;
   background: #2a2a2e;
   border: 1px solid #000000;
+  font-family: "Lucida Grande";
+  font-size: 11px;
 }
 nav#next a,
 nav#prev a {
@@ -133,6 +135,12 @@ nav#top .right .on-off,
   width: 100vw;
   top: 32px;
   position: absolute;
+}
+
+#welcome {
+  font-family: "Lucida Grande";
+  font-size: 11px;
+  line-height: 15px;
 }
 
 @media (max-width: 900px) {
