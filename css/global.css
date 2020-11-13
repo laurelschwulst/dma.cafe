@@ -195,6 +195,10 @@ nav#top .right .on-off,
     align-items: stretch;
     justify-content: top;
   }
+  .about-images img.landscape,
+  .about-images img.portrait {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
