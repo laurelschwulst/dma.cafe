@@ -64,6 +64,8 @@ area.external {
 }
 .about-text {
   max-width: 450px;
+  padding: 0 8px;
+  padding-bottom: 2em;
   margin: 0 auto 2em;
   font-family: "Lucida Grande";
   font-size: 11px;
@@ -164,6 +166,35 @@ nav#top .right .on-off,
   font-family: "Lucida Grande";
   font-size: 11px;
   line-height: 15px;
+}
+
+@media (max-width: 500px) {
+  #image-metadata .sun,
+  nav#top .right {
+    display: none;
+  }
+  nav#top .right {
+    opacity: 0;
+  }
+  nav#top .center {
+    position: absolute;
+    right: 12px;
+    left: auto;
+  }
+  nav#prev {
+    right: 12px;
+    text-align: center;
+    top: 0;
+    bottom: auto;
+  }
+  #image-metadata {
+    margin-top: 0.5em;
+  }
+  body.single.about {
+    display: block;
+    align-items: stretch;
+    justify-content: top;
+  }
 }
 
 @media (max-width: 900px) {
