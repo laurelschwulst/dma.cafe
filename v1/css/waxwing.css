@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'waxwing-regular';
+    src: url('../fonts/waxwing-webfont.woff2') format('woff2'),
+        url('../fonts/waxwing-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section#about-www-dma-cafe {
+    font-family: 'waxwing-regular';
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: left;
+}

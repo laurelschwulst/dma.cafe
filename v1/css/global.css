@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #0f0f0f;
+  background: #18171b;
+  color: #f0f0f0;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin: 1em;
+  line-height: 1.4;
+}
+body.single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+body.single .slide {
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
+a {
+  color: #f0f0f0;
+}
+img {
+  max-width: 100%;
+}
+.slide {
+  max-width: 1020px;
+  margin: 0 auto 1em;
+}
+footer {
+  margin: 30px 15px 15px;
+}
+area.external {
+  cursor: ne-resize;
+}
+section#about-www-dma-cafe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: serif;
+}
+section#about-www-dma-cafe img {
+  margin: 13px 12px; /* important fix */
+  align-self: center;
+}
+section#about-www-dma-cafe img.portrait {
+  max-width: 250px;
+}
+section#about-www-dma-cafe img.landscape {
+  max-width: 400px;
+}
+nav#next,
+nav#prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 1em;
+  font-size: "Lucida Grande";
+  font-size: 15px;
+}
+
+nav#next span,
+nav#prev span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding-bottom: 2px;
+  background: #2a2a2e;
+  border: 1px solid #000000;
+}
+nav#next a,
+nav#prev a {
+  text-decoration: none;
+}
+nav#next {
+  right: 0;
+}
+nav#prev {
+  left: 0;
+}
+nav#top {
+  background: #2a2a2e;
+  height: 32px;
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lucida Grande";
+  font-size: 11px;
+}
+nav#top .left {
+  position: absolute;
+  left: 12px;
+}
+
+nav#top .right {
+  position: absolute;
+  right: 12px;
+  display: none;
+}
+
+nav#top .center {
+  display: none;
+}
+
+nav#top .left,
+nav#top .right .on-off,
+#enter {
+  cursor: pointer;
+}
+
+#iframe {
+  display: none;
+  border: 0;
+  height: calc(100vh - 32px);
+  width: 100vw;
+  top: 32px;
+  position: absolute;
+}
+
+#welcome {
+  font-family: "Lucida Grande";
+  font-size: 11px;
+  line-height: 15px;
+}
+
+@media (max-width: 900px) {
+  /* nav { display: none; } */
+  .slide {
+    padding: 12px 12px 3px;
+  }
+  .slide img {
+    display: block;
+  }
+  section#about-www-dma-cafe img {
+    margin: 6px;
+  }
+}

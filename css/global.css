@@ -35,26 +35,52 @@ img {
   max-width: 1020px;
   margin: 0 auto 1em;
 }
+.slide img {
+  background: #2a2a2e;
+}
 footer {
   margin: 30px 15px 15px;
 }
 area.external {
   cursor: ne-resize;
 }
-section#about-www-dma-cafe {
+/* section#about-www-dma-cafe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: serif;
+} */
+#image-metadata {
+  font-family: "Lucida Grande";
+  font-size: 11px;
+  text-align: left;
+  color: #5a96f7;
 }
-section#about-www-dma-cafe img {
+#image-metadata .sun {
+  float: right;
+}
+#image-metadata a {
+  text-decoration: none !important;
+  color: #5a96f7;
+}
+.about-text {
+  max-width: 450px;
+  margin: 0 auto 2em;
+  font-family: "Lucida Grande";
+  font-size: 11px;
+}
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-images img {
   margin: 13px 12px; /* important fix */
   align-self: center;
 }
-section#about-www-dma-cafe img.portrait {
+.about-images img.portrait {
   max-width: 250px;
 }
-section#about-www-dma-cafe img.landscape {
+.about-images img.landscape {
   max-width: 400px;
 }
 nav#next,
@@ -66,23 +92,23 @@ nav#prev {
   top: 0;
   bottom: 0;
   margin: 1em;
-  font-size: "Lucida Grande";
-  font-size: 15px;
 }
 
 nav#next span,
 nav#prev span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 32px;
-  padding-bottom: 2px;
   background: #2a2a2e;
   border: 1px solid #000000;
+  font-family: "Lucida Grande";
+  font-size: 11px;
 }
 nav#next a,
 nav#prev a {
   text-decoration: none;
+  height: 32px;
+  padding: 0 8px 1px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav#next {
   right: 0;
