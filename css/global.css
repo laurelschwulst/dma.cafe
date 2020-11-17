@@ -168,6 +168,42 @@ nav#top .right .on-off,
   line-height: 15px;
 }
 
+.process-popup-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.process-popup {
+  max-width: 400px;
+  margin: 50px auto;
+  font-family: "Lucida Grande";
+  font-size: 11px;
+  line-height: 15px;
+  text-align: left;
+  padding: 12px;
+  background: #2a2a2e;
+  border-bottom: 1px solid #000000;
+}
+
+.process-popup p:first-child {
+  margin-top: 0;
+}
+
+.process-popup p:last-child {
+  margin-bottom: 0;
+}
+
+.process-popup figure {
+  margin: 2em 0;
+}
+
 @media (max-width: 500px) {
   #image-metadata .sun,
   nav#top .right {

@@ -142,9 +142,24 @@
           onMouseOut="MM_swapImgRestore()"
         />
       </map>
-      <div id="image-metadata">
-        v1. 73.9529° W
+      <div id="image-metadata" class="process">
+        v1. 74.0060° W
         <span class="sun">☀</span>
+      </div>
+      <div class="process-popup-container">
+        <div id="about" class="process-popup">
+          <p>All images on this website are hand printed in the sun.</p>
+          <p>This one was printed at 74.0060° W on Nov 14, 2020.</p>
+          <p>It’s version 1.</p>
+          <figure>
+            <img src="../images/process-about-1.png" width="150" />
+            <img src="../images/process-about-2.png" width="150" />
+          </figure>
+          <p>
+            You can learn more about this process
+            <a href="../about-www-dma-cafe">here</a>.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -158,6 +173,10 @@
       $(document).ready(function (e) {
         // image maps
         $("img[usemap]").rwdImageMaps();
+
+        // $(".process").click(function () {
+        //   $(".process-popup-container").css("display", "flex");
+        // });
       });
     </script>
   </body>
