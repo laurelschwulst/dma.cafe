@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UCLA DMA Salon (online)</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="UCLA DMA Salon (online)" />
+    <!-- <meta property="og:description" content=""/> -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://dma.cafe" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UCLA DMA Salon (online)" />
+    <!-- <meta name="twitter:description" content=""> -->
+    <meta name="twitter:image" content="images/sun-grid.png" />
+    <link rel="stylesheet" href="css/global.css?2020.11.05.v2" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.image.maps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        // image maps
+        $("img[usemap]").rwdImageMaps();
+        setInterval(function () {
+          $("img[usemap]").rwdImageMaps();
+        }, 3000);
+      });
+    </script>
+    <script>
+      // code adapted from http://www.wolfmanmuseum.org
+      function MM_preloadImages() {
+        var d = document;
+        if (d.images) {
+          if (!d.MM_p) d.MM_p = new Array();
+          var i,
+            j = d.MM_p.length,
+            a = MM_preloadImages.arguments;
+          for (i = 0; i < a.length; i++)
+            if (a[i].indexOf("#") != 0) {
+              d.MM_p[j] = new Image();
+              d.MM_p[j++].src = a[i];
+            }
+        }
+      }
+      function MM_swapImgRestore() {
+        var i,
+          x,
+          a = document.MM_sr;
+        for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++)
+          x.src = x.oSrc;
+      }
+
+      function MM_findObj(n, d) {
+        var p, i, x;
+        if (!d) d = document;
+        if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+          d = parent.frames[n.substring(p + 1)].document;
+          n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n];
+        for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++)
+          x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n);
+        return x;
+      }
+
+      function MM_swapImage() {
+        var i,
+          j = 0,
+          x,
+          a = MM_swapImage.arguments;
+        document.MM_sr = new Array();
+        for (i = 0; i < a.length - 2; i += 3)
+          if ((x = MM_findObj(a[i])) != null) {
+            document.MM_sr[j++] = x;
+            if (!x.oSrc) x.oSrc = x.src;
+            x.src = a[i + 2];
+          }
+      }
+    </script>
+  </head>
+
+  <body class="single">
+    <nav class="slide">
+      <img
+        src="images/sun-grid.png"
+        usemap="#nav-map"
+        alt="several large buttons with white, monospaced text on a calm blue background cyanotype (sun print)"
+        id="image-grid"
+      />
+      <map name="nav-map">
+        <area
+          target=""
+          alt="Carmen Argote, October 16, 2020 @ 1:30pm PST (PAST)"
+          href="carmen"
+          coords="810,784,112,55"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-1a.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target=""
+          alt="Kit Galloway, November 13, 2020 @ 1:30pm PST"
+          href="kit"
+          coords="1552,782,857,53"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-2a.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target=""
+          alt="Daniël Maarleveld &amp; Mitch Paone, November 20, 2020 @ 10:00am PST"
+          href="daniel-mitch"
+          coords="112,831,1552,1561"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-1b.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target="_blank"
+          class="external"
+          alt="UCLA DMA Salon (online)"
+          href="http://dma.ucla.edu/events/calendar/"
+          coords="1599,57,2298,524"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-3a.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target="_blank"
+          class="external"
+          alt="Add this calendar of events"
+          href="https://calendar.google.com/calendar/u/0?cid=a21zOTJmNnNiamQ3dmdoZ2ViM2ZxaDJoZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+          coords="1601,572,2298,1041"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-3b.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target=""
+          class="progress"
+          alt="About www.dma.cafe"
+          href="about-www-dma-cafe"
+          coords="1599,1088,2298,1561"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-3c.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+      </map>
+      <div id="image-metadata">
+        v1. 73.9529° W
+        <span class="sun">☀</span>
+        <!-- test -->
+      </div>
+    </nav>
+  </body>
+</html>
