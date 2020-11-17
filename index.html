@@ -75,18 +75,25 @@
             $("nav#top .right, nav#top .center").fadeIn(1200);
           }, 1500);
           setTimeout(function () {
+            $("#bgm-one")[0].volume = 0;
             bgm_one.play();
+            $("#bgm-one").animate({ volume: 1 }, 1500);
             playing = "yes";
           }, 3000);
         });
 
         function onOff() {
           if (playing == "yes") {
-            bgm_one.pause();
+            $("#bgm-one").animate({ volume: 0 }, 1500);
+            setTimeout(function () {
+              bgm_one.pause();
+            }, 1500);
             $("nav#top .right .on-off").html("( off )");
             playing = "no";
           } else {
+            $("#bgm-one")[0].volume = 0;
             bgm_one.play();
+            $("#bgm-one").animate({ volume: 1 }, 1500);
             $("nav#top .right .on-off").html("( on )");
             playing = "yes";
           }
@@ -97,7 +104,10 @@
         });
 
         $("nav#top .left").click(function () {
-          bgm_one.pause();
+          $("#bgm-one").animate({ volume: 0 }, 1500);
+          setTimeout(function () {
+            bgm_one.pause();
+          }, 1500);
           playing = "no";
           $("#iframe").fadeOut(1200);
           $("nav#top .right, nav#top .center").fadeOut(1200);

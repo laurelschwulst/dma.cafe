@@ -23,6 +23,17 @@
     <!-- <meta name="twitter:description" content=""> -->
     <meta name="twitter:image" content="images/sun-grid.png" />
     <link rel="stylesheet" href="css/global.css?2020.11.05.v2" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.image.maps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        // image maps
+        $("img[usemap]").rwdImageMaps();
+        setInterval(function () {
+          $("img[usemap]").rwdImageMaps();
+        }, 3000);
+      });
+    </script>
     <script>
       // code adapted from http://www.wolfmanmuseum.org
       function MM_preloadImages() {
@@ -151,14 +162,5 @@
         <!-- test -->
       </div>
     </nav>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.image.maps.js"></script>
-    <script>
-      $(document).ready(function (e) {
-        // image maps
-        $("img[usemap]").rwdImageMaps();
-      });
-    </script>
   </body>
 </html>
