@@ -22,58 +22,138 @@
     <meta name="twitter:title" content="About www.dma.cafe" />
     <!-- <meta name="twitter:description" content=""> -->
     <link rel="stylesheet" href="../css/global.css?1233111123" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <script>
+      // code adapted from http://www.wolfmanmuseum.org
+      function MM_preloadImages() {
+        var d = document;
+        if (d.images) {
+          if (!d.MM_p) d.MM_p = new Array();
+          var i,
+            j = d.MM_p.length,
+            a = MM_preloadImages.arguments;
+          for (i = 0; i < a.length; i++)
+            if (a[i].indexOf("#") != 0) {
+              d.MM_p[j] = new Image();
+              d.MM_p[j++].src = a[i];
+            }
+        }
+      }
+      function MM_swapImgRestore() {
+        var i,
+          x,
+          a = document.MM_sr;
+        for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++)
+          x.src = x.oSrc;
+      }
+
+      function MM_findObj(n, d) {
+        var p, i, x;
+        if (!d) d = document;
+        if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+          d = parent.frames[n.substring(p + 1)].document;
+          n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n];
+        for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++)
+          x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n);
+        return x;
+      }
+
+      function MM_swapImage() {
+        var i,
+          j = 0,
+          x,
+          a = MM_swapImage.arguments;
+        document.MM_sr = new Array();
+        for (i = 0; i < a.length - 2; i += 3)
+          if ((x = MM_findObj(a[i])) != null) {
+            document.MM_sr[j++] = x;
+            if (!x.oSrc) x.oSrc = x.src;
+            x.src = a[i + 2];
+          }
+      }
+    </script>
   </head>
 
-  <body class="single about">
-    <div>
-      <div class="about-images">
-        <img
-          src="../images/about1.jpg"
-          class="landscape"
-          alt="a glossy transparency printed with this website's interface is held up to the sky, the clouds appearing through it"
+  <body class="single">
+    <section id="about-www-dma-cafe" class="slide">
+      <img
+        src="../images/sun-about-links.png"
+        usemap="#about-map"
+        id="image-about"
+        alt="TK"
+      />
+      <map name="about-map">
+        <area
+          target="_blank"
+          alt="https://en.wikipedia.org/wiki/Cyanotype"
+          title="https://en.wikipedia.org/wiki/Cyanotype"
+          href="https://en.wikipedia.org/wiki/Cyanotype"
+          coords="878,337,1151,405"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-about','','../images/sun-about-cyanotype-hover.png',1)"
+          onMouseOut="MM_swapImgRestore()"
         />
-        <!-- <img
-          src="../images//about0.jpg"
-          class="portrait"
-          alt="several dried flowers and a vase full of water laying over a blue cyanoprint (sun print)"
-        /> -->
-        <img
-          src="../images//about3.jpg"
-          class="landscape"
-          alt="a blue cyanoprint lays in the sun, fully exposed on a white circular table"
+        <area
+          target="_blank"
+          alt="htttps://coombs-schwulst-seu.com"
+          title="htttps://coombs-schwulst-seu.com"
+          href="https://coombs-schwulst-seu.com"
+          coords="1613,1052,1732,1115"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-about','','../images/sun-about-css-hover.png',1)"
+          onMouseOut="MM_swapImgRestore()"
         />
-        <img
-          src="../images//about4.jpg"
-          class="portrait"
-          alt="Mindy sets a cyanoprint by washing it in a bucket of water, which is brilliant light blue just like the cyanoprint"
+        <area
+          target="_blank"
+          alt="http://michellelin.co"
+          title="http://michellelin.co"
+          href="http://michellelin.co"
+          coords="1919,1226,2171,1298"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-about','','../images/sun-about-michelle-hover.png',1)"
+          onMouseOut="MM_swapImgRestore()"
         />
+        <area
+          target="_blank"
+          alt="http://michellelin.co"
+          title="http://michellelin.co"
+          href="http://michellelin.co"
+          coords="1620,1283,1728,1355"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-about','','../images/sun-about-michelle-hover.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target="_blank"
+          alt="https://rchrd.net"
+          title="https://rchrd.net"
+          href="https://rchrd.net"
+          coords="2027,1406,2247,1469"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-about','','../images/sun-about-richard-hover.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target="_blank"
+          alt="https://rchrd.net"
+          title="https://rchrd.net"
+          href="https://rchrd.net"
+          coords="1624,1463,1838,1531"
+          shape="rect"
+          onMouseOver="MM_swapImage('image-about','','../images/sun-about-richard-hover.png',1)"
+          onMouseOut="MM_swapImgRestore()"
+        />
+      </map>
+      <div id="image-metadata">
+        v1. 73.9529° W
+        <span class="sun">☀</span>
       </div>
-      <p class="about-text">
-        <br /><br /><br />
-        Welcome to our slow technology café, www.dma.cafe.<br /><br />
-        Each page of this website is printed by hand in the sun.<br /><br />
-        For each event of the 2021–21 UCLA Digital Media Arts Salon lecture
-        series, we created a
-        <a href="https://en.wikipedia.org/wiki/Cyanotype" target="_blank"
-          >cyanotype</a
-        >
-        (sun print), which prints differently depending on the time of day,
-        year, and longitudinal coordinate. As new events are added to the Salon
-        series, new cyanotypes will be created over the course of the
-        seasons.<br /><br />
-        This website is designed and developed by us,
-        <a href="https://coombs-schwulst-seu.com" target="_blank">CSS</a> (Laura
-        Coombs, Laurel Schwulst, Mindy Seu), and the typeface is Waxwing by
-        <a href="http://michellelin.co" target="_blank">Michelle Lin</a> (UCLA
-        DMA '13). The website music was created by
-        <a href="https://rchrd.net" target="_blank">Richard Caceres</a> (UCLA
-        DMA '12).
-      </p>
-    </div>
+    </section>
 
-    <!-- <nav id="next">
-      <span><a href="about-continued-1.html">More information ...</a></span>
-    </nav> -->
     <nav id="prev">
       <span><a href="../grid.html">Back to home</a></span>
     </nav>
