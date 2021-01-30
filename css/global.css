@@ -6,10 +6,9 @@ body {
   height: 100%;
 }
 body {
-  background: #0f0f0f;
   background: #18171b;
   color: #f0f0f0;
-  font-family: monospace;
+  font-family: "Lucida Grande", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   margin: 1em;
@@ -30,14 +29,15 @@ a {
 }
 img {
   max-width: 100%;
+  color: #f0f0f0;
 }
 .slide {
   max-width: 1020px;
   margin: 0 auto 1em;
 }
-.slide img {
+/* .slide img {
   background: #2a2a2e;
-}
+} */
 footer {
   margin: 30px 15px 15px;
 }

@@ -21,17 +21,16 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="UCLA DMA Salon (online)" />
     <!-- <meta name="twitter:description" content=""> -->
-    <meta name="twitter:image" content="images/sun-grid.png" />
+    <meta name="twitter:image" content="images/2021-web-grid.png" />
     <link rel="stylesheet" href="css/global.css?2020.11.05.v2" />
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.image.maps.js"></script>
     <script>
+      // window.onload = function(e){
+      //  $("img[usemap]").rwdImageMaps();
+      // });
       $(document).ready(function (e) {
-        // image maps
         $("img[usemap]").rwdImageMaps();
-        setInterval(function () {
-          $("img[usemap]").rwdImageMaps();
-        }, 3000);
       });
     </script>
     <script>
@@ -92,73 +91,93 @@
   <body class="single">
     <nav class="slide">
       <img
-        src="images/sun-grid.png"
+        src="images/2021-web-grid.png"
         usemap="#nav-map"
         alt="several large buttons with white, monospaced text on a calm blue background cyanotype (sun print)"
         id="image-grid"
       />
+
       <map name="nav-map">
         <area
           target=""
-          alt="Carmen Argote, October 16, 2020 @ 1:30pm PST (PAST)"
-          href="carmen"
-          coords="810,784,112,55"
+          alt="Caroline Busta, March 12, 2021, 10:00am PST"
+          title=""
+          href="busta"
+          coords="808,519,112,55"
           shape="rect"
-          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-1a.png',1)"
-          onMouseOut="MM_swapImgRestore()"
         />
         <area
           target=""
-          alt="Kit Galloway, November 13, 2020 @ 1:30pm PST"
-          href="kit"
-          coords="1552,782,857,53"
+          alt="MSHR, February 19, 2021, 1:30pm PST"
+          title=""
+          href="mshr"
+          coords="859,57,1554,528"
           shape="rect"
-          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-2a.png',1)"
-          onMouseOut="MM_swapImgRestore()"
         />
         <area
           target=""
-          alt="Daniël Maarleveld &amp; Mitch Paone, November 20, 2020 @ 10:00am PST"
+          alt="Nikita Gale, February 5, 2021, 1:30pm PST"
+          title=""
+          href="nikita"
+          coords="112,579,808,1039"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="Daniël Maarleveld &amp; Mitch Paone, November 20, 2020 @ 10:00am PST (PAST)"
+          title=""
           href="daniel-mitch"
-          coords="112,831,1552,1561"
+          coords="857,568,1546,1041"
           shape="rect"
-          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-1b.png',1)"
-          onMouseOut="MM_swapImgRestore()"
-        />
-        <area
-          target="_blank"
-          class="external"
-          alt="UCLA DMA Salon (online)"
-          href="http://dma.ucla.edu/events/calendar/"
-          coords="1599,57,2298,524"
-          shape="rect"
-          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-3a.png',1)"
-          onMouseOut="MM_swapImgRestore()"
-        />
-        <area
-          target="_blank"
-          class="external"
-          alt="Add this calendar of events"
-          href="https://calendar.google.com/calendar/u/0?cid=a21zOTJmNnNiamQ3dmdoZ2ViM2ZxaDJoZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-          coords="1601,572,2298,1041"
-          shape="rect"
-          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-3b.png',1)"
-          onMouseOut="MM_swapImgRestore()"
         />
         <area
           target=""
-          class="progress"
-          alt="About www.dma.cafe"
-          href="about-www-dma-cafe"
-          coords="1599,1088,2298,1561"
+          alt="Kit Galloway, November 13, 2020 @ 1:30pm PST (PAST)"
+          title=""
+          href="kit"
+          coords="112,1086,804,1556"
           shape="rect"
-          onMouseOver="MM_swapImage('image-grid','','images/sun-grid-hover-3c.png',1)"
-          onMouseOut="MM_swapImgRestore()"
+        />
+        <area
+          target=""
+          alt="Carmen Argote, October 16, 2020 @ 1:30pm PST (PAST)"
+          title=""
+          href="carmen"
+          coords="857,1090,1552,1554"
+          shape="rect"
+        />
+        <area
+          target="_blank"
+          alt="UCLA DMA Salon (online)"
+          title=""
+          class="external"
+          href="http://dma.ucla.edu/events/calendar/"
+          coords="1601,53,2290,524"
+          shape="rect"
+        />
+        <area
+          target="_blank"
+          alt="Add this calendar of events"
+          title=""
+          class="external"
+          href="https://calendar.google.com/calendar/u/0?cid=a21zOTJmNnNiamQ3dmdoZ2ViM2ZxaDJoZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+          coords="1599,566,2292,1037"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt="About www.dma.cafe"
+          class="progress"
+          title=""
+          href="about-www-dma-cafe"
+          coords="1599,1088,2290,1556"
+          shape="rect"
         />
       </map>
+
       <div id="image-metadata">
-        v1. 73.9529° W
-        <span class="sun">☀</span>
+        <a href="menu-2020.html">v2. 73.9529° W</a>
+        <span class="sun"><a href="menu-2020.html">☀</a></span>
         <!-- test -->
       </div>
     </nav>
