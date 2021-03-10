@@ -104,9 +104,27 @@
         />
       </map>
       <div id="image-metadata">
-        v1. 73.9529° W
+        <span class="version">v1. 73.9529° W</span>
         <span class="sun">☀</span>
       </div>
+
+      <div class="process-popup-container">
+        <div id="about" class="process-popup">
+          <p>All images on this website were hand printed in the sun.</p>
+          <p>This one was printed at 73.9529° W.</p>
+          <p>It’s version 1.</p>
+          <!-- <figure>
+            <img src="../images/busta-process.png" width="300" />
+          </figure> -->
+          <p>
+            You can learn more about this
+            <a href="../about-www-dma-cafe">process</a>.
+          </p>
+          <div id="close">×</div>
+        </div>
+      </div>
+
+      <audio src="../sounds/camera.mp3" id="camera"></audio>
     </section>
 
     <nav id="prev">
@@ -115,6 +133,7 @@
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.image.maps.js"></script>
+    <script src="../js/proof.js"></script>
     <script>
       // window.onload = function(e){
       //   $("img[usemap]").rwdImageMaps();

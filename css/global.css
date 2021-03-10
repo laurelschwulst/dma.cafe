@@ -177,7 +177,16 @@ nav#top .right .on-off,
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
+  pointer-events: none;
+}
+
+.process-popup-container.active {
+  pointer-events: all;
+}
+
+.sun,
+.version {
+  cursor: pointer;
 }
 
 .process-popup {
@@ -190,6 +199,19 @@ nav#top .right .on-off,
   padding: 12px;
   background: #2a2a2e;
   border-bottom: 1px solid #000000;
+  display: none;
+  position: relative;
+}
+
+.process-popup #close {
+  position: absolute;
+  top: -2.75em;
+  right: -2.75em;
+  padding: 1.5em;
+  font-size: 1.5em;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
 }
 
 .process-popup p:first-child {
@@ -202,6 +224,10 @@ nav#top .right .on-off,
 
 .process-popup figure {
   margin: 2em 0;
+}
+
+audio {
+  display: none;
 }
 
 @media (max-width: 500px) {
