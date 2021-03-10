@@ -262,6 +262,15 @@ audio {
   .about-images img.portrait {
     max-width: 100%;
   }
+  .process-popup-container {
+    display: block;
+    top: 50px;
+  }
+  .process-popup #close {
+    left: -1em;
+    top: -3.5em;
+    right: auto;
+  }
 }
 
 @media (max-width: 900px) {
