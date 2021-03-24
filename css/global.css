@@ -238,6 +238,8 @@ iframe.archive-video {
   left: 2.5em;
   width: 200px;
   height: 150px;
+  opacity: 0.5;
+  filter: blur(5px);
 }
 
 @media (max-width: 500px) {
